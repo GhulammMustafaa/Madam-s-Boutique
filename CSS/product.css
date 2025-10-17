@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'pc';
+  src: url('../fonts/PerfectoCalligraphy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'InstaFont';
+  src: url('../fonts/Instagram Sans Bold.ttf') format('truetype');
+}
+
+*{
+  font-family: 'InstaFont', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+body {
+  background-color: bisque;
+}
+#logo {
+  font-family: 'pc', sans-serif; /* Include a fallback font */
+  font-size: 2rem;
+  font-weight: bold;
+}
+#form {
+  float: left;
+}
+
+/* Card Container */
+.card-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow cards to wrap when space is insufficient */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add space between cards */
+}
+
+/* Cards */
+.card-scale {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 300px; /* Keep original height */
+  width: 200px; /* Keep original width */
+  margin: 0 auto; /* Centers individual cards */
+}
+
+.card-scale:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-scale-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-scale-container img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-scale:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-scale:hover .overlay {
+  opacity: 1;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between buttons */
+  width: 80%; /* Ensure full width for buttons */
+  align-items: center; /* Centers buttons horizontally */
+}
+
+.button-container .btn {
+  padding: 12px 20px; /* Increase padding to make buttons wider */
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 80%; /* Make buttons take up full width */
+  max-width: 220px; /* Limit width for consistency */
+}
+
+/* Primary Button */
+.button-container .btn-primary {
+  /* background-color: #007bff; */
+  color: white;
+}
+
+.button-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary Button */
+.button-container .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button-container .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 20px; /* Space between card and title */
+  margin-bottom: 0; /* No extra space below the title */
+  line-height: 1.4;
+}
+
+/* Modal Styles */
+.modal {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Increased shadow for elevation */
+}
+
+.modal .btn {
+  /* background-color: #007bff;  */
+  color: white; /* Button text color */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.modal .btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card-scale {
+    margin: 0 auto; /* Center cards on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-scale {
+    margin: 0 auto; /* Keep consistent alignment */
+  }
+}
+
+/* Sidebar Container */
+.sidebar {
+  background: #f8f9fa;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+/* Sidebar Blocks */
+.sidebar-block {
+  margin-bottom: 20px;
+}
+
+/* Headings */
+.sidebar-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Sidebar Icon Menu */
+.sidebar-icon-menu-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.sidebar-icon-menu-item.active {
+  background: #e9ecef;
+}
+
+.sidebar-icon-menu-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sidebar-icon-menu-count {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Submenu */
+.sidebar-icon-submenu {
+  padding-left: 15px;
+}
+
+.sidebar-icon-submenu li a {
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Filters */
+.nouislider {
+  margin: 20px 0;
+}
+
+.slider-range {
+  height: 8px;
+  background: #007bff;
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.colours-wrapper li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+#footer {
+  background-color: black;
+}
+
+#gallery-section {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.gallery-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.gallery-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-view {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #e64a19;
+}
+#foot-svg{
+  height: 50px;
+  width: 200px;
+}

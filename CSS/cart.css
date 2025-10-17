@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'pc';
+    src: url('../fonts/PerfectoCalligraphy.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'InstaFont';
+    src: url('../fonts/Instagram Sans Bold.ttf') format('truetype');
+  }
+  #logo {
+    font-family: 'pc', sans-serif; /* Include a fallback font */
+    font-size: 4rem;
+    font-weight: bold;
+  }

@@ -1,0 +1,392 @@
+@font-face {
+  font-family: 'pc';
+  src: url('../fonts/PerfectoCalligraphy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'InstaFont';
+  src: url('../fonts/Instagram Sans Bold.ttf') format('truetype');
+}
+*{
+  font-family: 'InstaFont', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#logo {
+  font-family: 'pc', sans-serif; /* Include a fallback font */
+  font-size: 4rem;
+  font-weight: bold;
+}
+.card-scale {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  height: auto; /* Set a smaller height for the cards */
+  width: auto;
+}
+
+.card-scale:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-scale-container {
+  position: relative;
+  height: 100%; /* Ensure the image container fills the card height */
+  overflow: hidden;
+}
+
+.img-scale-container img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits nicely */
+}
+
+.card-scale:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-scale:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h4 {
+  font-size: 1.2rem; /* Adjust font size for smaller cards */
+  margin: 0;
+  font-weight: 600;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+  font-weight: 400;
+  text-align: center;
+}
+a{
+  text-decoration:none;
+}
+
+/* collections */
+/* Specific styles for category cards container */
+/* Custom card styling */
+/* Make sure these styles don't interfere with your previous CSS */
+/* Ensuring no interference with existing styles */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect */
+.category-card:hover {
+  transform: scale(1.03); /* Slightly scale the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.category-card:hover img {
+  filter: brightness(0.8); /* Darken the image */
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  text-align: center;
+}
+
+.category-card:hover .title-container {
+  opacity: 1; /* Show the title on hover */
+}
+
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1140px;
+  }
+}
+.product-banners .custom-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-banners .custom-banner:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-banners .banner-text {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+
+.product-banners .custom-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-banners .custom-banner:hover .custom-img {
+  transform: scale(1.1);
+}
+
+.product-banners .banner-bg {
+  position: relative;
+  height: 70%;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.product-banners .custom-banner {
+  animation: fadeIn 1s ease-in-out;
+}
+#foot-svg{
+  height: 50px;
+  width: 200px;
+}
+#footer{
+  background-color: black;
+}
+#gallery-section{
+  background-color: #f9f9f9;
+  color: #333;
+}
+.gallery-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.gallery-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-view {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #e64a19;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form Container */
+#form {
+  position: relative;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+}
+
+/* Card Header */
+.card-header {
+  background: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Controls */
+.form-check {
+  margin-bottom: 10px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-link {
+  background: none;
+  color: #007bff;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #form {
+    padding: 15px;
+    max-width: 100%;
+  }
+}
+#foot-svg{
+  height: 50px;
+  width: 200px;
+}
+/* General Styling */
+#collection_section {
+  text-align: center;
+}
+
+/* Card Styling */
+.category-card {
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.category-card img {
+  width: 100%;
+  height: 300px; /* Ensure all images have the same height */
+  object-fit: cover; /* Maintain aspect ratio and cover space */
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
+/* Title Styling */
+.title-container {
+  padding: 10px 0;
+  /* background: rgba(0, 0, 0, 0.7); Dark background for better text visibility */
+  color: #fff; /* White text for contrast */
+  border-radius: 0 0 8px 8px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 0;
+}

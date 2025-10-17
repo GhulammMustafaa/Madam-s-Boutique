@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'pc';
+  src: url('../fonts/PerfectoCalligraphy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'InstaFont';
+  src: url('../fonts/Instagram Sans Bold.ttf') format('truetype');
+}
+
+*{
+  font-family: 'InstaFont', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+#logo {
+  font-family: 'pc', sans-serif; /* Include a fallback font */
+  font-size: 4rem;
+  font-weight: bold;
+}
+#nav,#nav2{
+background-color: whitesmoke;
+}
+body{
+background-color: #dfe0e5ff;
+}
+.image-container {
+  /* background-image: url(pics/contact_page-pic.jpg); */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.hero {
+  position: relative;
+}
+#footer{
+  background-color: black;
+}
+
+/* Image container for centering */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero heading */
+.hero-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.bg-primary-light {
+  background-color: #e4e8fe;
+}
+.icon-rounded {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.card img {
+border-bottom: 1px solid #ddd;
+transition: transform 0.3s ease;
+}
+
+.card:hover img {
+transform: scale(1.05);
+}
+#foot-svg{
+height: 50px;
+width: 200px;
+}
+#form{
+height: 700px;
+background-color: rgb(153, 191, 235);
+}
+.hover-animate {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-animate:hover {
+transform: scale(1.05); /* Slightly enlarges the card */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+#foot-svg{
+  height: 50px;
+  width: 200px;
+}

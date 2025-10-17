@@ -1,0 +1,115 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.badge-custom {
+    background-color: #d9cfb2;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.price-discount {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 10px;
+}
+.btn-custom {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+}
+.btn-custom:hover {
+    background-color: #333;
+}
+.thumbnail-img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+.thumbnail-img:hover {
+    border-color: #000;
+}
+.selected-thumbnail {
+    border-color: #000;
+}
+#foot-svg{
+    height: 50px;
+    width: 200px;
+  }
+  #footer{
+    background-color: black;
+  }
+  #gallery-section{
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  .gallery-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .gallery-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .btn-view {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-view:hover {
+    background-color: #e64a19;
+  }
+  #foot-svg{
+    height: 50px;
+    width: 200px;
+  }

@@ -1,0 +1,89 @@
+.align-items-center {
+  align-items: center !important;
+}
+
+.row {
+  --ar-gutter-x: 1.5rem;
+  --ar-gutter-y: 0;
+  display: flex
+;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--ar-gutter-y));
+  margin-right: calc(-0.5* var(--ar-gutter-x));
+  margin-left: calc(-0.5* var(--ar-gutter-x));
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+}
+
+.card-body h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 0.2rem rgba(106, 17, 203, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: #6a11cb;
+  border-color: #6a11cb;
+}
+
+.btn {
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-google {
+  color: #dc4e41;
+}
+
+.btn-facebook {
+  color: #3b5998;
+}
+
+.btn-google:hover,
+.btn-facebook:hover {
+  background: #f8f9fa;
+}
+
+.w-48 {
+  width: 48%;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+.btn-close {
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.btn-close:hover {
+  transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}
+.password-toggle input {
+  padding-right: 2.5rem;
+}
+.password-toggle .fas {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

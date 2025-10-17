@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/collection.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Collections</title>
+</head>
+<body>
+    <div class="container-fluid position-sticky px-5">
+        <header class="border-bottom lh-5 py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+              <a class="link-secondary" href="#" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+              </a>
+            </div>
+            <div class="col-4 text-center">
+              <a id="logo" class="blog-header-logo text-body-emphasis text-decoration-none fst-manhattan fs-2" href="#">Madam's Boutique</a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center gap-4">
+              <!-- Trigger for Modal -->
+              <a class="link-secondary modal-dialog-centered" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"></path>
+                </svg>
+              </a>
+            </div>
+            <!-- Modal -->
+            
+    
+              <a class="link-secondary " href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
+              </svg></a>
+            </div>
+          </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <nav class="nav nav-underline d-flex justify-content-center gap-5 w-100">
+                    <a class="nav-item nav-link link-body-emphasis active" href="index.html">Home</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="collection.html">Collections</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="comparison.html">Comparison</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="aboutus.html">About Us</a>
+                    <a class="nav-item nav-link link-body-emphasis" href="contact-Us.html">Contact Us</a>
+                  </nav>
+            </div>
+            <button class="navbar-toggler d-lg-none ms-auto bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    
+      <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- <div class="card border-0 bg-light text-dark shadow py-md-4 py-lg-5 px-lg-5 px-xl-5 position-relative" style="width: 100%; border-radius: 15px;"> -->
+                <!-- Close Icon -->
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="card-body">
+                  <h2 class="py-2 pb-lg-3 text-center">Sign in to Around</h2>
+                  <form id="signInForm">
+                    <div class="pb-3 mb-3">
+                      <div class="position-relative">
+                        <i class="fas fa-envelope fs-lg position-absolute top-50 start-0 translate-middle-y text-dark opacity-80 ms-3"></i>
+                        <input class="form-control form-control-lg ps-5" type="email" placeholder="Email address" required>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="position-relative">
+                        <i class="fas fa-lock fs-lg position-absolute top-50 start-0 translate-middle-y text-dark opacity-80 ms-3"></i>
+                        <div class="password-toggle">
+                          <input class="form-control form-control-lg ps-5" type="password" placeholder="Password" required>
+                          <i class="fas fa-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-wrap align-items-center justify-content-between pb-4">
+                      <div class="form-check my-1">
+                        <input class="form-check-input" type="checkbox" id="keep-signedin">
+                        <label class="form-check-label ms-1" for="keep-signedin">Keep me signed in</label>
+                      </div>
+                      <a class="text-dark fs-sm fw-semibold text-decoration-none my-1 ms-3" href="account-password-recovery.html">Forgot password?</a>
+                    </div>
+                    <button class="btn btn-light btn-outline-dark w-100 mb-4" type="submit">Sign in</button>
+                    <h2 class="h6 text-center pt-3 pt-lg-4 mb-4">Or sign in with your social account</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 gy-3 pb-2">
+                      <div class="col">
+                        <a class="btn btn-icon btn-light btn-outline-danger btn-google btn-lg w-100" href="#">
+                          <i class="fab fa-google fs-xl me-2"></i>
+                          Google
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a class="btn btn-icon btn-light btn-outline-primary btn-facebook btn-lg w-100" href="#">
+                          <i class="fab fa-facebook-f fs-xl me-2"></i>
+                          Facebook
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <h1 class="text-center mt-5">OUR DESIGNERS</h1>
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- First Card -->
+            <div class="col-12 col-md-6">
+                <div class="card-scale">
+                    <div class="img-scale-container">
+                        <img src="products/category-women.webp" alt="Category Women" class="img-fluid">
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <h1 >Liora Zephyr</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <!-- Second Card -->
+            <div class="col-12 col-md-6">
+                <div class="card-scale">
+                    <div class="img-scale-container">
+                        <img src="products/men.webp" alt="Category Men" class="img-fluid">
+                        <!-- Overlay -->
+                        <div class="overlay">
+                            <h1>Kai Ellwood</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- products -->
+    <h1 class="text-center mt-5">COLLECTION</h1>
+    <div id="collection_section" class="container py-5">
+        <div class="row justify-content-center">
+            <!-- Old School Card -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="category-card card">
+                    <img src="Fashion Editorial Field Projects __ Photos, videos, logos, illustrations and branding.jpeg" class="card-img-top" alt="Old School">
+                    <div class="title-container">
+                        <h3 class="card-title  text-center">Old School</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Old Money Card -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="category-card card">
+                    <img src="products/oldmoney.jpg" class="card-img-top" alt="Old Money">
+                    <div class="title-container">
+                        <h3 class="card-title text-center">Old Money</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Trending Card -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="category-card card">
+                    <img src="2025_01_10_women_winter_collection_wb.jpg" class="card-img-top" alt="Trending">
+                    <div class="title-container">
+                        <h3 class="card-title text-center">Trending</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+  <div  class=" w-100 h-70 bg-white">
+      <div class="container">
+          <video src="VVideos/collection_model.mp4" autoplay muted loop></video>
+      </div>
+  </div>
+
+  <div class="py-6 container">
+    <div class="hero-content pb-5">
+        <h1 class="text-center mb-4">Featured Products</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <!-- First Product Card -->
+            <div class="col">
+                <div class="card scale-card shadow-sm rounded overflow-hidden">
+                    <img src="products/pants/8 Outfits That Prove High-Waisted Jeans Are Eternally Chic.jpeg" class="card-img-top" alt="Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Jeans</h5>
+                        <a href="product1.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Product Card -->
+            <div class="col">
+                <div class="card scale-card shadow-sm rounded overflow-hidden">
+                    <img src="products/Jackets/The Everygirl's Office-Ready Capsule Wardrobe.jpeg" class="card-img-top" alt="Jacket">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Winter Jacket</h5>
+                        <a href="jacket.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Product Card -->
+            <div class="col">
+                <div class="card scale-card shadow-sm rounded overflow-hidden">
+                    <img src="products/Shirts/Anytime No-Iron Tunic.jpeg" class="card-img-top" alt="Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Shirts</h5>
+                        <a href="shirt.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Product Card -->
+            <div class="col">
+                <div class="card scale-card shadow-sm rounded overflow-hidden">
+                    <img src="products/bags/The Y2K Bag Trend You Really Don't Need to Spend a Lot On.jpeg" class="card-img-top" alt="Bag">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bags</h5>
+                        <a href="bags.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth Product Card -->
+            <div class="col">
+                <div class="card scale-card shadow-sm rounded overflow-hidden">
+                    <img src="products/scarf.jpeg" class="card-img-top" alt="Scarf">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Winter Scarf</h5>
+                        <a href="scarf.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sixth Product Card -->
+            <div class="col">
+                <div class="card scale-card shadow-sm rounded overflow-hidden">
+                    <img src="products/shoes.jpeg" class="card-img-top" alt="Shoes">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Shoes</h5>
+                        <a href="shoes.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+                 
+    <div class="code code--left aos-init aos-animate" data-aos="fade-up">
+        <footer id="footer" class="bg-black text-light py-5">
+          <div class="container-fluid px-5 ">
+            <div class="row">
+              <div class="col-md-2">
+                <h3>Company</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white text-decoration-none">Our story</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">Press</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h3>Help Center</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-light text-decoration-none">Shipping</a></li>
+                  <li><a href="#" class="text-light text-decoration-none">Returns</a></li>
+                  <li><a href="#" class="text-light text-decoration-none">Payment</a></li>
+                  <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-5">
+                <h5>Want style Ideas and Treats?</h5>
+                <form class="d-flex">
+                  <input type="email" class="form-control me-2" placeholder="Your email">
+                  <button type="submit" class="btn btn-light text-dark">Subscribe</button>
+                </form>
+                <div class="mt-3 mb-3">
+                  <a href="#" class="me-3"><i class="fab fa-facebook-f text-light"></i></a>
+                  <a href="#" class="me-3"><i class="fab fa-instagram text-light"></i></a>
+                  <a href="#" class="me-3"><i class="fab fa-twitter text-light"></i></a>
+                  <a href="#" class=""><i class="fab fa-pinterest text-light"></i></a>
+                </div>
+              </div>
+              
+              <div class="col-md-3">
+                <h5>Region & Currency</h5>
+                <select class="form-select mb-3">
+                  <option selected>United States</option>
+                  <option value="1">United Kingdom</option>
+                  <option value="2">Canada</option>
+                </select>
+                <select class="form-select mb-3">
+                  <option selected>USD</option>
+                  <option value="1">EUR</option>
+                  <option value="2">GBP</option>
+                </select>
+                <div class="d-flex">
+                  <img id="foot-svg" src="svgs/amex-1.svg" alt="Visa" class="">
+                  <img id="foot-svg" src="svgs/master-card-1.svg" alt="MasterCard" class="">
+                  <img id="foot-svg" src="svgs/visa-1.svg" alt="AmEx">
+                </div>
+              </div>
+            </div>
+    
+            <div class="row mt-4 pt-3 border-top border-secondary">
+              <div class="col-md-6">
+                <small>© 2020 Madam's Boutique.</small>
+              </div>
+              <div class="col-md-6 text-md-end mt-3">
+                <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-light text-decoration-none">Terms of Use</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+            
+    <!-- Scripts -->
+    <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
